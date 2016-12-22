@@ -1,5 +1,5 @@
 [![build status](https://circleci.com/gh/fouadsemaan/ansible-kubernetes.svg?style=shield)](https://circleci.com/gh/fouadsemaan/ansible-kubernetes)
-andrewrothstein.kubernetes
+fouadsemaan.kubernetes
 =======================
 
 A role for installing [Kubernetes](http://kubernetes.io/docs/getting-started-guides/binary_release/#prebuilt-binary-release) binaries to /usr/local/bin.
