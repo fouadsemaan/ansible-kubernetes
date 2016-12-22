@@ -1,4 +1,4 @@
-[![build status](https://circleci.com/gh/andrewrothstein/ansible-kubernetes.svg?style=shield)](https://circleci.com/gh/andrewrothstein/ansible-kubernetes)
+[![build status](https://circleci.com/gh/fouadsemaan/ansible-kubernetes.svg?style=shield)](https://circleci.com/gh/fouadsemaan/ansible-kubernetes)
 andrewrothstein.kubernetes
 =======================
 
