@@ -1,4 +1,4 @@
-(https://circleci.com/gh/fouadsemaan/ansible-kubernetes.svg?style=shield)
+[circleci](https://circleci.com/gh/fouadsemaan/ansible-kubernetes.svg?style=shield)
 
 fouadsemaan.kubernetes
 =======================
