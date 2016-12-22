@@ -1,0 +1,27 @@
+---
+- name: create target directory
+  become: yes
+  become_user: root
+  file: >-
+    path={{kubernetes_install_dir}}
+    state=directory
+    mode=0755
+
+- name: install kubernetes
+  become: yes
+  become_user: root
+  get_url: >-
+    url={{kubernetes_url}}{{item.f}}
+    dest={{kubernetes_install_path}}/{{item.f}}-{{kubernetes_ver}}
+    checksum={{item.c}}
+    mode=0755
+  with_items: '{{kubernetes_binaries}}'
+
+- name: link kubernetes
+  become: yes
+  become_user: root
+  file: >-
+    src={{kubernetes_install_path}}/{{item.f}}-{{kubernetes_ver}}
+    dest={{kubernetes_install_dir}}/{{item.f}}
+    state=link
+  with_items: '{{kubernetes_binaries}}'
