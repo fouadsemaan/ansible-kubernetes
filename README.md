@@ -1,4 +1,4 @@
-[![build status](https://circleci.com/gh/fouadsemaan/ansible-kubernetes.svg?style=shield)]
+[![build status](https://circleci.com/gh/fouadsemaan/ansible-kubernetes.svg?style=shield)](https://circleci.com/gh/fouadsemaan/ansible-kubernetes)
 fouadsemaan.kubernetes
 =======================
 
