@@ -3,7 +3,7 @@
   become: yes
   become_user: root
   file: >-
-    path={{kubernetes_install_dir}}
+    path={{kubernetes_install_path}}
     state=directory
     mode=0755
 
@@ -11,17 +11,17 @@
   become: yes
   become_user: root
   get_url: >-
-    url={{kubernetes_url}}{{item.f}}
-    dest={{kubernetes_install_path}}/{{item.f}}-{{kubernetes_ver}}
+    url={{kubernetes_url}}/{{item.f}}
+    dest={{kubernetes_install_path}}/{{item.f}}
     checksum={{item.c}}
-    mode=0755
+    mode={{item.m}}
   with_items: '{{kubernetes_binaries}}'
 
 - name: link kubernetes
   become: yes
   become_user: root
   file: >-
-    src={{kubernetes_install_path}}/{{item.f}}-{{kubernetes_ver}}
+    src={{kubernetes_install_path}}/{{item.f}}
     dest={{kubernetes_install_dir}}/{{item.f}}
     state=link
   with_items: '{{kubernetes_binaries}}'
