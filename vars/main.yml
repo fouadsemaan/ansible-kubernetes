@@ -1,4 +1,4 @@
 ---
 kubernetes_os : '{{ansible_system|lower}}'
-kubernetes_url : '{{kubernetes_mirror}}/{{kubernetes_ver}}/bin/{{kubernetes_os}}/{{kubernetes_platform}}/'
-kubernetes_install_path : '{{kubernetes_install_dir}}'
+kubernetes_url : '{{kubernetes_mirror}}/{{kubernetes_ver}}/bin/{{kubernetes_os}}/{{kubernetes_platform}}'
+kubernetes_install_path : '{{kubernetes_install_dir}}/k8s-binaries-{{kubernetes_ver}}'
